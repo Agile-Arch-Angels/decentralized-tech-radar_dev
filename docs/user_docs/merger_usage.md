@@ -10,10 +10,14 @@ The **Decentralized Tech Radar** has a Merger feature to combine the contents of
 
 ## How to use
 
-When wanting to merge `file0.csv` and `file1.csv`, run the following command:
+When wanting to merge `file0.csv` and `file1.csv`, run one of the following commands:
 
-```cmd
+```bash
+go run main.go -merge "<path-to-file> <path-to-other-file>"
+```
+
+```PowerShell
 go run main.go merge <path-to-file> <path-to-other-file>
 ```
 
-The file paths are separated by a space.
+The file-paths are separated by a space.
