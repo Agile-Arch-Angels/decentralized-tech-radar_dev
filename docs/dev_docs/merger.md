@@ -12,7 +12,12 @@ This can be used to create an overview of e.g. an entire department's tech stack
 
 ## Functions
 
-The merger currently has two functions:
+The merger currently has three functions:
+
+* `getHeader(filepath string) []byte`
+  * **What it is:** A private function taking a string argument, which returns an Array of data type bytes.
+  * **What it does:** This function takes the provided filepath to an CSV file to open it, reads the specification file's header, and writes it to a byte array.
+
 * `readCsvContent(filepath string) []byte`
   * **What it is:** A private function taking a string argument, which returns an Array of data type bytes.
   * **What it does:** This function takes the provided filepath to an CSV file, opens the file, ignores the file's header but proceeds to read its content line by line, where each line is added to a bytes array.
