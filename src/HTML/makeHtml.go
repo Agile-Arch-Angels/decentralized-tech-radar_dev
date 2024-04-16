@@ -42,10 +42,6 @@ func GenerateHtml(csvData string) {
 			<div class="graph-footer"></div>
 		</main>
 	</body>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-autocomplete/1.0.7/jquery.auto-complete.min.js"></script>
-	<script src="https://d3js.org/d3.v7.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.min.js"></script>
 	<script src="./js/requireConfig.js"></script>
 
