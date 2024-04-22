@@ -32,7 +32,7 @@ The FilePath refers to the designated path. An example would be: 'C://Program/My
 				if err != nil {
 					panic(err)
 				} 
-			} else if runtime.GOOS == "linux" {
+			} else if runtime.GOOS == "linux" || runtime.GOOS == "darwin" {
 				fmt.Print("GOOS: " + runtime.GOOS)
 				cmd := exec.Command("open", "index.html")
 				err := cmd.Run()
