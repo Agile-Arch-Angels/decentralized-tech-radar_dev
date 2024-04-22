@@ -4,6 +4,10 @@ Copyright © 2024 NAME HERE <EMAIL ADDRESS>
 package cmd
 
 import (
+	"fmt"
+	"os/exec"
+	"runtime"
+
 	html "github.com/NovoNordisk-OpenSource/decentralized-tech-radar/HTML"
 	Reader "github.com/NovoNordisk-OpenSource/decentralized-tech-radar/SpecReader"
 	"github.com/spf13/cobra"
@@ -20,6 +24,23 @@ The FilePath refers to the designated path. An example would be: 'C://Program/My
 		specs := Reader.CsvToString(args[0])
 		html.GenerateHtml(specs)
 		open, _ := cmd.Flags().GetBool("open")
+		if open {
+			if runtime.GOOS == "windows" {
+				fmt.Println("GOOS: " + runtime.GOOS)
+				cmd := exec.Command("explorer", "index.html")
+				_, err := cmd.CombinedOutput()
+				if err != nil {
+					panic(err)
+				} 
+			} else if runtime.GOOS == "linux" {
+				fmt.Print("GOOS: " + runtime.GOOS)
+				cmd := exec.Command("open", "index.html")
+				err := cmd.Run()
+				if err != nil {
+					panic(err)
+				}
+			}
+		}
 	},
 }
 
