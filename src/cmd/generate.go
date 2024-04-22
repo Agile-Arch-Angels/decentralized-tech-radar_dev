@@ -19,6 +19,7 @@ The FilePath refers to the designated path. An example would be: 'C://Program/My
 	Run: func(cmd *cobra.Command, args []string) {
 		specs := Reader.CsvToString(args[0])
 		html.GenerateHtml(specs)
+		open, _ := cmd.Flags().GetBool("open")
 	},
 }
 
