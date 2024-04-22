@@ -24,4 +24,6 @@ The FilePath refers to the designated path. An example would be: 'C://Program/My
 
 func init() {
 	rootCmd.AddCommand(generateCmd)
+
+	generateCmd.Flags().Bool("open", false, "Add this flag to open the generated html file when it has been generated")
 }
