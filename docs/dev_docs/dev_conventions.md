@@ -14,6 +14,8 @@ Branches:
     style_<name_of_style>
     refactor_<name_of_refactor>
     chore_<name_of_chore>
+    ci_<name_of_ci>
+    cd_<name_of_cd>
 ```
 This is the semantic syntax for commits.  
 Example:
@@ -26,10 +28,12 @@ Commits:
     style: <name_of_style>
     refactor: <name_of_refactor>
     chore: <name_of_chore> 
+    ci_<name_of_ci>
+    cd_<name_of_cd>
 ```
 
 # Mob & Pair programming conventions
-If mob or pair programming is used the driver should be noted in the commit.
+If mob or pair programming is used the driver should be noted in the commit if the driver is different from the current committer.
 Example:
 ```
 feat: Add cool new feature
