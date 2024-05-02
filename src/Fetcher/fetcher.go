@@ -23,10 +23,10 @@ var token sync.Mutex
 var finished int
 var CSV_errs []string
 
-func FetchFiles(url, branch, specFile string, ch chan error) {
+func FetchFiles(url, branch, whitelist_file string, ch chan error) {
 	// Pulls files and returns the paths to said files
 	seenFolders := make(map[string]string)
-	paths, err := puller(url, branch, specFile)
+	paths, err := puller(url, branch, whitelist_file)
 	if err != nil {
 		ch <- err
 	}
@@ -175,7 +175,7 @@ func ListingReposForFetch(repos []string) error {
 }
 
 // https://stackoverflow.com/questions/39544571/golang-round-to-nearest-0-05
-func Round(x, unit float64) float64 {
+func round(x, unit float64) float64 {
 	return math.Round(x/unit) * unit
 }
 
@@ -187,7 +187,7 @@ func progressBar(numOfFiles int) {
 	for {
 		for _, r := range `-\|/` {
 			percent_fin := float32(finished) / float32(numOfFiles) * 100.0
-			rounded_percent := Round((float64(finished) / float64(numOfFiles)), 0.05) * 100
+			rounded_percent := round((float64(finished) / float64(numOfFiles)), 0.05) * 100
 			for i := 0; i < int(rounded_percent)/5; i++ {
 				progressBar[i] = "#"
 			}
@@ -211,7 +211,7 @@ func executer(cmd *exec.Cmd, folder string) error {
 	return err
 }
 
-func puller(url, branch, specFile string) ([]string, error) {
+func puller(url, branch, whitelist_file string) ([]string, error) {
 	paths := []string{}
 
 	// Create temp folder for git in the system temp folder
@@ -241,7 +241,7 @@ func puller(url, branch, specFile string) ([]string, error) {
 	}
 
 	// Add whitelist to sparse-checkout
-	fileData, err := os.ReadFile(specFile)
+	fileData, err := os.ReadFile(whitelist_file)
 	if err != nil {
 		return paths, err
 	}
