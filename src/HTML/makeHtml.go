@@ -48,14 +48,21 @@ func GenerateHtml(csvData string) {
 			</div>
 		</main>
 	</body>
-	<script src="./HTML/js/libraries/require.js"></script>
-	<script src="./HTML/js/requireConfig.js"></script>
+	<!--<script src="./HTML/js/libraries/require.js"></script>-->
+	<!--<script src="./HTML/js/requireConfig.js"></script>-->
+
 
 	<!-- this script builds the radar with the go generated csv file -->
-	<script>
+	<!--<script>
 		require(['./HTML/js/renderingTechRadar.js'], function(Factory) {
 			Factory({{.CSV}}).build(); //{{.}} refers to the csvData
 		})
+	</script>-->
+	<!-- without requirejs -->
+	<script src="./HTML/js/renderingTechRadar.js"></script>
+	<script>
+		const sheetData = {{.CSV}} // CSV data here
+  		const sheet = Factory(sheetData);  sheet.build();
 	</script>
 	</html>
 	`
