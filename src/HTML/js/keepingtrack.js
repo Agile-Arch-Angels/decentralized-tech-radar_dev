@@ -105,3 +105,38 @@
     //code 
     global.d3.tip = d3tip;
   })(window);
+
+  //try 4
+
+  (function() {
+    // Define jQuery module
+    var JQ = (function() {
+        // jQuery code here
+        return jQuery; // Return jQuery object
+    })();
+
+    // Define jQuery UI (jquery-autocomplete) module
+    var AutoComplete = (function() {
+        // jQuery UI code here
+        return jQuery.ui; // Return jQuery UI object
+    })();
+
+    // Define facModel module
+    var facModel = (function(JQ, AutoComplete) {
+        // Your facModel code here
+        function init() {
+            // Code using JQ and AutoComplete
+        }
+
+        // Expose init function (or any other public functions) as the interface
+        return {
+            init: init
+        };
+    })(JQ, AutoComplete);
+
+    // Initialize facModel
+    facModel.init();
+})();
+
+//try 5
+// use $.$, for instance when calling jquery different places
