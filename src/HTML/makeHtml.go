@@ -59,10 +59,18 @@ func GenerateHtml(csvData string) {
 		})
 	</script>-->
 	<!-- without requirejs -->
-	<script src="./HTML/js/renderingTechRadar.js"></script>
-	<script>
+	<!-- <script src="./HTML/js/renderingTechRadar.js"></script> -->
+	<script src="./HTML/js/TechRadar3.js"></script>
+	<!--<script>
 		const sheetData = {{.CSV}} // CSV data here
-  		const sheet = Factory(sheetData);  sheet.build();
+  		<!-- const sheet = Factory(sheetData);  sheet.build(); -->
+		<!-- const sheet = some.start.Factory(sheetData); --> 
+		Factory.build();
+	</script>-->
+	<script>
+		const sheetData = {{.CSV}}
+		const sheet = Factory(sheetData);
+		sheet.build();
 	</script>
 	</html>
 	`
