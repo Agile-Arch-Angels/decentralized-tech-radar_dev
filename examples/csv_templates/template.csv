@@ -2,3 +2,6 @@ name,ring,quadrant,isNew,moved,description
 Python,hold,Languages & frameworks,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
 web,hold,Languages & frameworks,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
 react,hold,Languages & frameworks,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+rust,assess,techniques,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+assembly,hold,platforms,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+go,trial,tools,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
