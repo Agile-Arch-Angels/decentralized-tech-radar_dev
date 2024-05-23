@@ -1,7 +1,59 @@
 name,ring,quadrant,isNew,moved,description
-Python,hold,Languages & frameworks,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
-web,hold,Languages & frameworks,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
-react,hold,Languages & frameworks,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
-rust,assess,techniques,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
-assembly,hold,platforms,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
-go,trial,tools,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Java,trial,Languages & frameworks,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+C++,hold,tools,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Python,assess,platforms,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+JavaScript,adopt,techniques,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Ruby,trial,Languages & frameworks,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Swift,hold,tools,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Kotlin,assess,platforms,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Go,adopt,techniques,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Rust,trial,Languages & frameworks,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Scala,hold,tools,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Perl,assess,platforms,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+TypeScript,adopt,techniques,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+PHP,trial,Languages & frameworks,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+C#,hold,tools,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Objective-C,assess,platforms,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Lua,adopt,techniques,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Groovy,trial,Languages & frameworks,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+R,hold,tools,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Elixir,assess,platforms,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Erlang,adopt,techniques,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+React,trial,Languages & frameworks,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Angular,hold,tools,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Vue,assess,platforms,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Ember,adopt,techniques,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Backbone,trial,Languages & frameworks,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Meteor,hold,tools,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Polymer,assess,platforms,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Aurelia,adopt,techniques,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Knockout,trial,Languages & frameworks,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Dojo,hold,tools,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Mithril,assess,platforms,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Elm,adopt,techniques,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Inferno,trial,Languages & frameworks,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Preact,hold,tools,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Svelte,assess,platforms,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Riot,adopt,techniques,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Stencil,trial,Languages & frameworks,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Hyperapp,hold,tools,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+LitElement,assess,platforms,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Marko,adopt,techniques,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Scrum,trial,Languages & frameworks,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Kanban,hold,tools,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Lean,assess,platforms,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Agile,adopt,techniques,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Waterfall,trial,Languages & frameworks,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+XP,hold,tools,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Crystal,assess,platforms,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+DSDM,adopt,techniques,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+FDD,trial,Languages & frameworks,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+RAD,hold,tools,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+RUP,assess,platforms,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Spiral,adopt,techniques,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+V-Model,trial,Languages & frameworks,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+TDD,hold,tools,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+BDD,assess,platforms,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Pair Programming,adopt,techniques,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Mob Programming,trial,Languages & frameworks,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
+Code Review,hold,tools,false,0,Lorem ipsum dolor sit amet consectetur adipiscing elit.
