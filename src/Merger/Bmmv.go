@@ -68,10 +68,10 @@ func (b Bmmv) duplicateRemoval(name, line string, buffer *bytes.Buffer, set map[
 	//os.Stat("./Dictionary/alt_names.txt")
 
 	realName := name
-	if alt_names[name] != "" {
-		//TODO: Figure out how to handle numbers in names
-		name = alt_names[strings.ToLower(name)]
-	}
+	//if alt_names[name] != "" {
+	//TODO: Figure out how to handle numbers in names
+	//	name = alt_names[strings.ToLower(name)]
+	//}
 
 	ringLen := len(line[len(realName)+1 : strings.IndexByte(line[len(realName)+1:], ',')+len(realName)+1])
 	ringName := line[len(realName)+1 : ringLen+1]
